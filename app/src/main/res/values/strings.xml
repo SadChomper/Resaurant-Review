@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Restaurant REVIEWS</string>
+    <string name="restaurant_image_description">first image holder</string>
+
+
+    <string-array name="restaurant_names">
+        <item>Pasta Posta</item>
+        <item>Jouba</item>
+        <item>Best Voice</item>
+        <item>Di Napoli</item>
+    </string-array>
+
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+
+</resources>

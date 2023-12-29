@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Greeting TextView for Prenom and Nom -->
+    <TextView
+        android:id="@+id/textGreeting"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choisissez le Restaurant à évaluer"
+        android:textSize="19sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerRestaurants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Sélectionnez un restaurant"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:hint="Entrez l'adresse du restaurant"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Qualité du service"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioQualiteExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"/>
+
+        <RadioButton
+            android:id="@+id/radioQualiteBien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bien"/>
+
+        <RadioButton
+            android:id="@+id/radioQualiteMoyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moyen"/>
+
+        <RadioButton
+            android:id="@+id/radioQualiteMediocre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médiocre"/>
+    </RadioGroup>
+
+    <!-- UI elements for evaluating quality of food -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Qualité des plats"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioPlatExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"/>
+
+        <RadioButton
+            android:id="@+id/radioPlatBien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bien"/>
+
+        <RadioButton
+            android:id="@+id/radioPlatMoyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moyen"/>
+
+        <RadioButton
+            android:id="@+id/radioPlatMediocre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médiocre"/>
+    </RadioGroup>
+
+    <!--here i want the prix and the two - and + buttons on the sameline  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:textSize="19sp"
+        android:text="Prix Moyen des Plats"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+        <Button
+            android:id="@+id/decreaseButton"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:hint="Entrez le prix"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            tools:ignore="InefficientWeight" />
+
+        <Button
+            android:id="@+id/increaseButton"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Votre Experience"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarExperience"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp"
+        android:numStars="5"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/buttonValidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Valider" />
+
+</LinearLayout>

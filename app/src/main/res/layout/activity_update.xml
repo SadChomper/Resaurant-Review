@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <EditText
+        android:id="@+id/TextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:hint="Entrez la nouvelle adresse du restaurant"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Nouveau choix de Qualité du service"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RQualiteExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"/>
+
+        <RadioButton
+            android:id="@+id/RQualiteBien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bien"/>
+
+        <RadioButton
+            android:id="@+id/RQualiteMoyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moyen"/>
+
+        <RadioButton
+            android:id="@+id/RQualiteMediocre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médiocre"/>
+    </RadioGroup>
+
+    <!-- UI elements for evaluating quality of food -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:text="Nouveau choix de Qualité des plats"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/RPlatExcellent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Excellent"/>
+
+        <RadioButton
+            android:id="@+id/RPlatBien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bien"/>
+
+        <RadioButton
+            android:id="@+id/RPlatMoyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moyen"/>
+
+        <RadioButton
+            android:id="@+id/RPlatMediocre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Médiocre"/>
+    </RadioGroup>
+
+    <!--here i want the prix and the two - and + buttons on the sameline  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:textSize="19sp"
+        android:text="Nouveau choix de Prix Moyen des Plats"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp">
+
+
+
+        <EditText
+            android:id="@+id/editTextPrice1"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:hint="Entrez le nouveau prix"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            tools:ignore="InefficientWeight" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mettre à jour Votre Experience"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarExperience1"
+        style="?android:attr/ratingBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="16dp"
+        android:numStars="5"
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Update" />
+
+    <ImageView
+        android:id="@+id/restaurantImageView"
+        android:layout_width="411dp"
+        android:layout_height="107dp"
+        android:layout_gravity="center"
+        android:src="@drawable/up" />
+
+</LinearLayout>
